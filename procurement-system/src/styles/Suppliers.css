@@ -1,0 +1,54 @@
+/* Suppliers Page Layout */
+.suppliers-container {
+    padding: 20px;
+    background: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Styling */
+  .suppliers-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .suppliers-table th,
+  .suppliers-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .suppliers-table th {
+    background: #667eea;
+    color: white;
+  }
+  
+  .suppliers-table tr:hover {
+    background: #f1f1f1;
+  }
+  
+  /* Contact Button */
+  .contact-btn {
+    background: #667eea;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background: #5555d4;
+  }
+  

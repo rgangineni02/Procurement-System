@@ -1,0 +1,61 @@
+/* Inventory Page Layout */
+.inventory-container {
+    padding: 20px;
+    background: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Styling */
+  .inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inventory-table th,
+  .inventory-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .inventory-table th {
+    background: #667eea;
+    color: white;
+  }
+  
+  .inventory-table tr:hover {
+    background: #f1f1f1;
+  }
+  
+  /* Reorder Status Labels */
+  .reorder-status {
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .reorder-status.low-stock {
+    background: #ffcc00;
+    color: #663d00;
+  }
+  
+  .reorder-status.restock-needed {
+    background: #e74c3c;
+    color: white;
+  }
+  
+  .reorder-status.sufficient {
+    background: #4caf50;
+    color: white;
+  }
+  

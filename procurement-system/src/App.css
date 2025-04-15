@@ -1,0 +1,125 @@
+/* General App Layout */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  width: 100%;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 🔥 This aligns content top & bottom */
+}
+
+/* Title */
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* Wrapper for nav + logout */
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+/* Navigation Links */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  flex-grow: 1; /* Pushes logout to the bottom */
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar-link {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar-link:hover {
+  color: #fff;
+}
+
+/* Highlight Active Link */
+.active-link {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+/* Logout Button Styling */
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 20px; /* Adjust this value to move it up/down */
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+/* Main content */
+.content {
+  margin-left: 270px;
+  padding: 20px;
+  width: calc(100% - 270px);
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .sidebar-content {
+    height: auto;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .sidebar ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .sidebar li {
+    margin: 10px;
+  }
+
+  .logout-button {
+    margin-top: 20px;
+  }
+}
