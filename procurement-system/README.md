@@ -41,7 +41,7 @@ This project is a web-based **Procurement and Inventory Management System** buil
 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/your-username/procurement-system.git
+git clone https://github.com/rgangineni02/Procurement-System.git
 cd procurement-system
 ```
 
